@@ -3,6 +3,7 @@
 # ⚠️ এই ফাইলে কোনো API key লেখা নেই। শুধু secret-এর নাম আছে।
 #    key বসাতে হবে Cloudflare Dashboard → Settings → Variables and Secrets
 #    (অথবা টার্মিনালে: wrangler secret put API_KEY_1)
+# ── Deployment trigger - Nov 10
 # ─────────────────────────────────────────────────────────────────────────
 
 name = "trendy"
