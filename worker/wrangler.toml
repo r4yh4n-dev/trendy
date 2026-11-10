@@ -29,9 +29,9 @@ SOURCE_2_URL = "https://dropbazarbd.com/api/products"
 # তারপর নিচের id বসিয়ে কমেন্ট খুলে দিন।
 # KV না থাকলেও Worker চলবে — অর্ডার শুধু লগ হবে, রেসপন্স সফল আসবে।
 #
-# [[kv_namespaces]]
-# binding = "ORDERS"
-# id = "এখানে_KV_namespace_id_বসান"
+[[kv_namespaces]]
+binding = "ORDERS"
+id = "06bc103fcd1c4085b0b8a0506ee22de5"
 
 # ── Secrets (এগুলো wrangler.toml-এ লিখবেন না!) ──
 # API_KEY_1  →  wrangler secret put API_KEY_1
