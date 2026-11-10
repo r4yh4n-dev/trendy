@@ -25,7 +25,7 @@
 const VERSION = '4.0.0';
 
 /* ── ডিফল্ট সোর্স (wrangler.toml-এর [vars] দিয়ে বদলানো যায়) ── */
-const DEFAULT_SOURCE_1 = 'https://businesskoro.com/api/products';
+const DEFAULT_SOURCE_1 = 'https://api.businesskoro.com/api/v1/storefront/products';
 const DEFAULT_SOURCE_2 = 'https://dropbazarbd.com/api/products';
 
 /* ── CORS allow-list ── */
@@ -118,9 +118,8 @@ async function fetchSource(source, env) {
     'User-Agent': 'TrendyChoice-Worker/' + VERSION
   };
   if (key) {
-    headers['Authorization'] = 'Bearer ' + key;
-    headers['X-API-Key'] = key;
-  }
+  headers['x-api-key'] = key;
+}
 
   try {
     const res = await withTimeout(fetch(source.url, { headers }), UPSTREAM_TIMEOUT);
@@ -195,7 +194,7 @@ function normalize(p, source) {
     name: nameEn,
     description: descEn,
     images,
-    price: num(p.price),
+    price: num(p.suggestedPrice != null ? p.suggestedPrice : p.price),
     oldPrice: num(p.oldPrice || p.comparePrice || 0),
     stock,
     inStock,
