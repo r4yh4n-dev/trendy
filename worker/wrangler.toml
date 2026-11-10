@@ -5,7 +5,7 @@
 #    (অথবা টার্মিনালে: wrangler secret put API_KEY_1)
 # ─────────────────────────────────────────────────────────────────────────
 
-name = "trendy-choice-api"
+name = "trendy"
 main = "worker.js"
 compatibility_date = "2024-11-01"
 
