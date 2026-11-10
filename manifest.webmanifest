@@ -1,0 +1,18 @@
+{
+  "name": "Trendy Choice — অনলাইন শপ",
+  "short_name": "Trendy Choice",
+  "description": "গ্যাজেট, গেমিং, ফ্যাশন ও ঘর সাজানোর পণ্য — সারা বাংলাদেশে ডেলিভারি।",
+  "lang": "bn",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f8fc",
+  "theme_color": "#2563eb",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
